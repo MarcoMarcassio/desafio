@@ -11,6 +11,9 @@ font-family: 'Yellowtail', cursive;
 }
 body{
     background-color: rgb(136, 175, 162);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 header{
     background-color: rgb(119, 236, 172);
@@ -29,13 +32,13 @@ header{
 /**grid index**/
 .grillaIndex{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    "header  header  header"
-    "titulo  titulo  titulo"
-    "parrafo parrafo parrafo"
-    "imagen  imagen  imagen"
-    "footer  footer  footer"
+    "header  header "
+    "titulo  titulo"
+    "parrafo parrafo"
+    "imagen  imagen "
+    "footer  footer"
     ;
     gap: 20px;
 }
@@ -142,6 +145,7 @@ img{
 main{
     font-family: 'Yellowtail', cursive;
     font-weight: bold; 
+    display: grid;
 }
 .mainIndex{
     width: 100%; 
@@ -168,13 +172,13 @@ footer{
 @media screen and (max-width: 768px){
     .grillaIndex{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas:
-        "header  header"
-        "titulo  titulo"
-        "parrafo parrafo"
-        "imagen  imagen"
-        "footer  footer"
+        "header"
+        "titulo"
+        "parrafo"
+        "imagen"
+        "footer"
     ;
     }
 }
@@ -189,5 +193,5 @@ footer{
         "imagen"
         "footer"
     ;
-    }
+}
 }
