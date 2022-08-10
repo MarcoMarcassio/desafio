@@ -1,7 +1,7 @@
 footer {
   padding: 100px;
   background-color: rgb(119, 236, 172);
-  margin-top: 100px;
+  margin-top: 0px;
 }
 
 header {
@@ -10,7 +10,6 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   height: 200px;
   grid-area: header;
 }
@@ -23,6 +22,10 @@ header {
 .barraNav {
   list-style: none;
   display: flex;
+  width: 200px;
+  height: 100px;
+  padding: 30px;
+  margin: 10px;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -43,7 +46,7 @@ img {
   border: 10px double white;
 }
 
-h1 {
+h1, h2 {
   color: black;
   padding: 20px;
   border: 10px double black;
